@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+.navbar{
+    width: 100vw;
+    height: 10% ;
+    background-color: rgb(103, 59, 142);
+    display: flex;
+
+    
+}
+
+
+.brand{
+    color: whitesmoke;
+    
+    width: 40%;
+    
+    display: flex;
+    align-items: center;
+    
+}
+.brand h3{
+    padding: 10px;
+    margin: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+li{
+    list-style: none;
+    
+}
+
+.banner{
+    height: 80%;
+    background-color: rgb(216, 109, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer{
+    height: 10%;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+h2{
+    color: whitesmoke;
+}
+
+.menu{
+    width: 50%;
+    
+}
+.menu-link{
+    height:60px ;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+}
+.menu-link :hover{
+    color: rgb(28, 3, 56);
+}
+
+
+.mobile_menu{
+    width: 10%;
+    height: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+   
+}
+
+.fa-solid{
+    color:white;
+    font-size: 20px;
+    margin-right: 20px;
+}
+#menu{
+    display: none;
+}
+#close{
+    display: none;
+}
+
+/* For Expanded Navbar */
+.navbar-expanded{
+  
+     height:200px;
+     width: 100%;
+     background-color: rgb(103, 59, 142);
+     display: none;
+    
+    
+}
+
+.navbar-expanded .expanded_link li{
+        
+     padding: 15px;
+
+}
+
+
+.navbar-expanded .expanded_link li:hover{
+    background-color: rgb(33, 3, 61);
+}
+
+@media only screen and (max-width: 803px){
+   
+
+    .brand{
+        width: 40%;
+    }
+    .menu{
+        width: 40%;
+    }
+
+    .mobile_menu{
+        width: 10%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+  
+    #menu{
+        display: block;
+    }
+    #close{
+        display: none;
+    }
+   
+    .menu-link{
+    
+        display: none;
+    }
+   
+    
+}
+
