@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>StopWatch</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(to top right, rgb(100, 157, 180),rgb(86, 86, 241));
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+        }
+       
+        .watch{
+            height: 200px;
+            width: 300px;
+            background-color: rgba(255, 246, 143, 0.9);
+            display: grid;
+            align-content: center;
+            justify-content: center;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+           
+        }
+        .watch .timer_display{
+           width: 250px;
+           height: 150px;
+           background-color: rgb(252, 255, 194);
+           display: grid;
+            align-content: center;
+            justify-content: center;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+           
+        }
+        #start{
+            padding: 10px;
+            margin: 20px;
+            width: 80px;
+            background: none;
+            border: none;
+            background-color: rgb(142, 193, 255);
+            font-weight: bold;
+            color: white;
+            outline: none;
+        
+            
+        }
+        #stop{
+            padding: 10px;
+            margin: 20px;
+            border: none;
+
+            width: 80px;
+            border: 1px solid rgb(43, 29, 113);
+            background: transparent;
+            color: white;
+            outline: none;
+            font-weight: bold;
+
+        
+            
+        }
+
+        #stop:hover{
+            background-color: rgb(142, 193, 255);
+            border: none;
+        }
+       
+        #reset{
+            padding: 10px;
+            margin: 20px;
+            width: 80px;
+            border: none;
+    
+            border: 1px solid rgb(43, 29, 113);
+            background: transparent;
+            color: white;
+            outline: none;
+            font-weight: bold;
+
+        
+            
+        }
+        #reset:hover{
+            background-color: rgb(142, 193, 255);
+            border: none;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+       <div class="watch">
+        <div class="timer_display">
+        <h1><span id="hours">00</span>:<span id="min">00</span>:<span id="sec">00</span>.
+            <span id="count">00</span>
+        </h1>
+       </div>
+    </div>
+       <div class="btnDiv">
+       <button id="start">Start</button>
+       <button id="stop">Stop</button>
+       <button id="reset">Reset</button>
+
+
+    </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
